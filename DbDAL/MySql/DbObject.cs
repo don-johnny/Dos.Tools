@@ -602,7 +602,7 @@ namespace Hxj.DbObjects.MySQL
                 //{               
                 //   return GetColumnInfoListSP(DbName, TableName);                
                 //}           
-                string strSql = "SHOW COLUMNS FROM " + TableName;
+                string strSql = "SHOW FULL COLUMNS FROM " + TableName;
                 DataTable columnsTables = CreateColumnTable();
                 DataRow dr;
                 MySqlDataReader reader = ExecuteReader(DbName, strSql);
